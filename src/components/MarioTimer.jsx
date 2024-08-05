@@ -15,10 +15,10 @@ function MarioTimer() {
     const [initialSeconds, setSeconds] = useState(0);
     const [isJumping, setIsJumping] = useState(false);
 
-    const marioSong = useRef(new Audio('public/SuperMarioBros.mp3'));
-    const itsAMeMario = useRef(new Audio('public/itsamemario.mp3'));
-    const levelComplete = useRef(new Audio('public/levelComplete.mp3'));
-    const marioJumpSound = useRef(new Audio('public/marioJumpSound.mp3'));
+    const marioSong = useRef(new Audio(process.env.PUBLIC_URL + '/SuperMarioBros.mp3'));
+    const itsAMeMario = useRef(new Audio(process.env.PUBLIC_URL + '/itsamemario.mp3'));
+    const levelComplete = useRef(new Audio(process.env.PUBLIC_URL + '/levelComplete.mp3'));
+    const marioJumpSound = useRef(new Audio(process.env.PUBLIC_URL + '/marioJumpSound.mp3'));
 
 
     marioSong.current.loop = true;
