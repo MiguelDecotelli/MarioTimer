@@ -1,16 +1,16 @@
 {
+  "homepage": "https://MiguelDecotelli.github.io/MarioTimer",
   "name": "timer",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://MiguelDecotelli.github.io/MarioTimer",
   "type": "module",
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "serve": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
